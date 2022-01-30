@@ -1,0 +1,51 @@
+#show_sketch{
+    float: right;
+    margin-right: 20px;
+}
+body {
+    background: rgb(228,155,244);
+    background: -moz-linear-gradient(0deg, rgba(228,155,244,1) 0%, rgba(80,114,167,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(228,155,244,1) 0%, rgba(80,114,167,1) 100%);
+    background: linear-gradient(0deg, rgba(228,155,244,1) 0%, rgba(80,114,167,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e49bf4",endColorstr="#5072a7",GradientType=1);
+
+    text-align: center;
+}
+
+#heading_name{
+background-color: rgb(171, 221, 171);
+margin-left: 190px;
+margin-right: 190px;
+color:rgb(45, 64, 71);
+border: solid;
+text-shadow: 1px 1px white;
+font-family: fantasy;
+}
+
+#label,#confidence {
+
+    font-size: 20px;
+    color:rgb(218, 232, 255);
+    font-family: monospace;
+}
+
+.btn-success:hover{
+background-color: rgb(5, 90, 5);
+}
+
+canvas{
+    border:rgb(0, 0, 0) 1px solid;
+    border-radius: 20px;
+    animation-name: canvas_border;
+    animation-duration: 2s;
+    margin-top: 130px;
+    animation-iteration-count: infinite;
+} 
+@keyframes canvas_border {
+    from{
+        box-shadow: 1px 1px 100px rgb(255, 0, 0);
+    }
+    to{
+        box-shadow: 1px 1px 100px rgb(255, 115, 0);
+    }
+}
